@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+  #navbar{
+    background-color: #ffffff;
+  }
+  nav{
+    
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #nav{
+  max-width: var(--max-width);
+  padding: 1.5rem,1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+ #logo a{
+font-size: 1.5rem;
+font-weight: 600;
+color: var(--primary-color);
+transition: 0.3s;
+
+  }
+  #logo a:hover{
+    color: var(--primary-color-dark);
+  }
+
+  nav ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: left 0.3s;
+    margin-left: auto;
+  }
+  .nav-item a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    transition: 0.3s;
+    margin-left: 30px;
+    
+  }
+  .nav-item a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  #home,#about,#projects,#contact{
+    background-color: var(--extra-light);
+   
+  }
+  .lite{
+    color: var(--text-light);
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 2px;
+  }
+  #hdetails{
+    margin-top: 80px;
+    /* margin-left: 30px; */
+  }
+  #hdetails h1{
+   font-weight: 400;
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+  }
+  #hdetails h1 span{
+    font-weight: 700;
+  }
+  #hdetails button{
+    background-color: var(--primary-color);
+    color: #faf5ff;
+  }
+  #hdetails button:hover{
+    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
+  }
+  .plite{
+    color: var(--text-light);
+   
+    line-height: 1.5rem;
+    padding: 2px;
+   
+  }
+
+  #img img{
+   width: 65%;
+  
+   border-radius: 50%;
+   
+  }
+  /* about me */
+
+  #abme,#pr,#cont{
+    text-align: center;
+    
+    
+  }
+  #abme h1{
+    margin-top: 1.5rem;
+  }
+  #abimage img{
+    height: 400px;
+
+  }
+  #infomations{
+    margin-top: 2rem;
+ }
+ .info{
+  margin-top: 1rem;
+}
+.info span{
+  margin-left: 1rem;
+}
+#abdescription{
+  text-align: justify;
+  /* font-size: 20px; */
+  font-weight: 400;
+  
+}
+#pr a{
+  text-decoration: none;
+  transition: 0.3s;
+  
+  
+}
+#sh,#vg{
+  border: 3px solid var(--extra-light) ;
+  border-radius: 10px;
+}
+#sh img,#vg img{
+  transition: 0.3s;
+}
+#sh:hover,#vg:hover{
+  border: 3px solid var(--primary-color-dark) ;
+}
+#sh:hover img,#vg:hover img{
+  scale: 0.8;
+  border: 3px solid var(--secondary-color) ; 
+  
+}
+#sh:hover h5,#vg:hover h5{
+  color: var(--primary-color-dark);
+}
+#contact{
+  /* margin-top: 5px; */
+}
+#icon-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 40px;
+  
+
+}
+.icon,.up{
+  height: 50px;
+  width: 50px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+ 
+}
+.icon i{
+  color: black;
+}
+.icon:hover{
+  background-image: linear-gradient( to bottom right, #9333ea,#a855f7);
+
+}
+.icon:hover i{
+  color: white;
+  animation: shake 0.75s;
+
+}
+@keyframes shake{
+  10%{
+      transform: rotate(-15deg);
+  }
+  20%{
+      transform: rotate(15deg);
+  }
+  30%{
+      transform: rotate(-15deg);
+  }
+  40%{
+      transform: rotate(15deg);
+  }
+}
+#cont p{
+  color: #a855f7;
+}
+/* Footer Styles */
+footer {
+  background-color:#ffffff;
+  color: var(--text-dark);
+}
+footer i{
+  color: var(--primary-color-dark);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover i {
+color: var(--primary-color);
+}
+
+footer .fa {
+  margin-right: 10px;
+}
+#copy{
+  padding-left: 60px;
+}
+#ci{
+  padding-left: 110px;
+  
+}
+
